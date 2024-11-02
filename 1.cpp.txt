@@ -8,10 +8,10 @@ int main()
 double y, x, x1, x2, h;
 cout << "Enter [x1: x2] and h \n";
 cin >> x1 >> x2 >> h;
-cout << "************WHILE*********" << endl;
+cout << "************DO-WHILE*********" << endl;
 x = x1;
-while(x<=x2+h/2){
-y = pow(x, 3) + 3*pow(sin(x),2)- 3;
+do{
+    y =pow(x,3)+ 3*pow(sin(x),2)- 3;
     cout << setw(10) << x << setw(15) << y << endl;
     x+=h;
-}
+}while(x<=x2+h/2);
